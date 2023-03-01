@@ -18,4 +18,14 @@ it deals with terminals, parsing json files etc.
 If you really want to try this out, clone this repo and run `cargo build`. Then in your monorepo run
 the binary `<path_to_rx_repo>/target/debug/rx` and follow the instructions.
 
+Or if you want to add it as a binary to your path, run these commands:
+
+```shell
+cargo build --release
+cargo install --path .
+```
+
+Then you can simply type `rx`.
+
+
 Expect a lot of edgy behaviour and unpolished experience.
