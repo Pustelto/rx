@@ -4,6 +4,10 @@ Small CLI utility wrapper around Nx tooling to make easy selection of project an
 
 ⚠️ I build this as a way to learn Rust, so it is definitely not robust and production ready. Use on your own danger.
 
+‼️ In 15.7 Nx changed how to detects projects. It doesn't store them in `workspace.json` file in the
+root, but it auto-detects them. Rx is not compatible with this version as it is using that
+`workspace.json` file to list all projects.
+
 ## Motivation
 
 I use primarely Nx from the terminal and I remember only the main commands. But as soon as I need
@@ -26,6 +30,5 @@ cargo install --path .
 ```
 
 Then you can simply type `rx`.
-
 
 Expect a lot of edgy behaviour and unpolished experience.
